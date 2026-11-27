@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gobble Dash — The Great Turkey Escape</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #241a33; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: sans-serif; }
+  #wrap { width: min(960px, 100vw); }
+  canvas { display: block; width: 100%; height: auto; background: #87ceeb; cursor: pointer; }
+  #help { color: #d8cde8; text-align: center; font-size: 13px; padding: 8px 12px; line-height: 1.5; }
+  #help b { color: #ffd76a; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="540"></canvas>
+  <div id="help"><b>SPACE</b> jump &nbsp;·&nbsp; <b>DOWN</b> duck-slide &nbsp;·&nbsp; <b>LEFT / RIGHT</b> pace &nbsp;·&nbsp; <b>P</b> pause &nbsp;·&nbsp; <b>M</b> mute &nbsp;·&nbsp; Outrun the farmer to 1500 m!</div>
+</div>
+<script src="src/rng.js"></script>
+<script src="src/audio.js"></script>
+<script src="src/input.js"></script>
+<script src="src/world.js"></script>
+<script src="src/render.js"></script>
+<script src="src/main.js"></script>
+</body>
+</html>
